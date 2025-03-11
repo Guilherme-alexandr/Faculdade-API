@@ -14,7 +14,7 @@ app.register_blueprint(login_bp, url_prefix='/login')
 
 @app.route('/')
 def index():
-    return redirect(url_for('professores.index'))
+    return redirect(url_for('login.index'))
 
 
 if __name__ == '__main__':
