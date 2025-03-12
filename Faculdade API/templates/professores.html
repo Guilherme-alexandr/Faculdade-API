@@ -4,28 +4,26 @@
         <title>Professores</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/tpa.css') }}">
     </head>
     <body>
         <header>
-            <h1>Bem-vindo à Minha Página</h1>
         </header>
-    
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
-        </nav>
-    
+
         <main>
-            <h2>Sobre Mim</h2>
-            <p>Esta é uma página simples criada em HTML com um layout básico. Aqui você pode personalizar o conteúdo de acordo com o que precisar. O layout inclui um cabeçalho, um menu de navegação, uma área principal de conteúdo e um rodapé fixo.</p>
-            <p>Você pode adicionar mais seções, alterar cores e ajustar o estilo como desejar.</p>
+            <div class= caixa>
+                <h1 class= titulo> 
+                    Bem vindo professor! 
+                </h1>
+                <p class= subtitulo>
+                    Suas turmas:
+                </p>
+                <button onclick="criarturma()" class= botao>
+                    Criar professor:
+                </button>
+            </div>
         </main>
     
-        <footer>
-            <p>&copy; 2025 Minha Página Simples. Todos os direitos reservados.</p>
-        </footer>
-    
     </body>
+    <script src="/static/js/professor.js"></script>
 </html>
